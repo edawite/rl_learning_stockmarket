@@ -1,0 +1,24 @@
+train:
+  eval_interval: 10          # evaluate after every N episodes
+  save_path: "results/best_model.pth"
+  log_path: "results/train_log.csv"
+
+environment:
+  initial_cash: 100000.0
+  transaction_cost: 0.001
+  max_steps: 1000
+  features: ["close", "sma_20", "sma_50", "rsi_14"]
+  lookback: 50
+
+dqn:
+  gamma: 0.99
+  lr: 0.0005
+  batch_size: 64
+  memory_size: 50000
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  target_update: 500
+  num_episodes: 50
+  warmup: 100
+  seed: 42
