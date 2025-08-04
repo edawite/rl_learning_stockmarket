@@ -70,18 +70,6 @@ Evaluate a trained policy:
 python src/eval.py --model_path results/best_model.pth
 ```
 
-## 📊 Results
-
-An example of metrics you might see after training:
-
-| Metric                | Value   |
-|----------------------:|:------- |
-| Final Portfolio Value | $X,XXX  |
-| Sharpe Ratio          | 1.78    |
-| Max Drawdown          | -12.5%  |
-| Win Rate              | 61.2%   |
-
-![Equity Curve](results/equity_curve.png)
 
 ## 🔍 Future Improvements
 
